@@ -19,9 +19,12 @@
 [submodule "externals/libmath"]
 	path = externals/libmath
 	url = https://github.com/Melown/libmath.git
-[submodule "externals/buildsys/libjsoncpp"]
-	path = externals/buildsys/libjsoncpp
-	url = git@github.com:Melown/libjsoncpp.git
 [submodule "externals/libimgproc"]
 	path = externals/libimgproc
 	url = https://github.com/Melown/libimgproc.git
+[submodule "externals/libjsoncpp"]
+	path = externals/libjsoncpp
+	url = git@github.com:Melown/libjsoncpp.git
+[submodule "externals/gdal-drivers"]
+	path = externals/gdal-drivers
+	url = git@github.com:Melown/gdal-drivers.git
