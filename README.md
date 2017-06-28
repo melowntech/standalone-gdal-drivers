@@ -82,7 +82,7 @@ build will not work otherwise.
 For building Standalone-GDAL-Drivers, you just have to use ``make``
 
 ```
-cd tools
+cd standalone-gdal-drivers
 make -j4 # to compile in 4 parallel processes
 ```
 
