@@ -73,7 +73,7 @@ git clone --recursive https://github.com/Melown/standalone-gdal-drivers.git
 ```
 
 **NOTE:** If you did clone from GitHub previously without the `--recursive`
-parameter, you can fetch submodules by invoking `git submodule updated`. The
+parameter, you can fetch submodules by invoking `git submodule update`. The
 build will not work otherwise.
 
 
