@@ -16,19 +16,19 @@ find_package(OpenCV 2.4 REQUIRED)
 find_package(Proj REQUIRED)
 include_directories(${PROJ_INCLUDE_DIR})
 find_package(GeographicLib REQUIRED)
-include_directories(${GEOGRAPHICLIB_INCLUDE_DIR})
+include_directories(SYSTEM ${GeographicLib_INCLUDE_DIR})
 
 find_package(GDAL REQUIRED)
-include_directories(${GDAL_INCLUDE_DIR})
+include_directories(SYSTEM ${GDAL_INCLUDE_DIR})
 
 find_package(CURL REQUIRED)
-include_directories(${CURL_INCLUDE_DIR})
+include_directories(SYSTEM ${CURL_INCLUDE_DIR})
 
 find_package(GIF REQUIRED)
-include_directories(${GIF_INCLUDE_DIR})
+include_directories(SYSTEM ${GIF_INCLUDE_DIR})
 
 find_package(Protobuf REQUIRED)
-include_directories(${PROTOBUF_INCLUDE_DIRS})
+include_directories(SYSTEM ${PROTOBUF_INCLUDE_DIRS})
 
 find_package(Sqlite3 REQUIRED)
 link_directories(${Sqlite3_LIBRARY_DIRS})
