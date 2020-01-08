@@ -28,3 +28,6 @@
 [submodule "externals/gdal-drivers"]
 	path = externals/gdal-drivers
 	url = git@github.com:Melown/gdal-drivers.git
+[submodule "externals/libservice"]
+	path = externals/libservice
+	url = https://github.com/melowntech/libservice

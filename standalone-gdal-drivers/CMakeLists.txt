@@ -11,7 +11,7 @@ find_package(Boost 1.46 REQUIRED
 link_directories(${Boost_LIBRARY_DIRS})
 include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
 
-find_package(OpenCV 2.4 REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 
 find_package(Proj REQUIRED)
 include_directories(${PROJ_INCLUDE_DIR})
@@ -44,6 +44,7 @@ add_subdirectory(src/math EXCLUDE_FROM_ALL)
 add_subdirectory(src/imgproc EXCLUDE_FROM_ALL)
 add_subdirectory(src/geometry EXCLUDE_FROM_ALL)
 add_subdirectory(src/jsoncpp EXCLUDE_FROM_ALL)
+add_subdirectory(src/service EXCLUDE_FROM_ALL)
 add_subdirectory(src/geo EXCLUDE_FROM_ALL)
 
 # gdal drivers

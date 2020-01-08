@@ -2,3 +2,7 @@ bin
 lib
 build
 build.*
+
+output
+.gdb_history
+*.log

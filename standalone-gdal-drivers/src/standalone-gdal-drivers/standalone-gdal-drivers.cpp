@@ -46,8 +46,13 @@ void GDALRegister_Melown(void)
     if (const auto *value = std::getenv("LOG_FILE")) {
         dbglog::log_file(value);
     }
+    if (const auto *value = std::getenv("LOG_FILE_TRUNCATE")) {
+        if (!std::strcmp(value, "1")) {
+            dbglog::log_file_truncate();
+        }
+    }
     if (const auto *value = std::getenv("LOG_CONSOLE")) {
-        dbglog::log_console(std::strcmp(value, "1"));
+        dbglog::log_console(!std::strcmp(value, "1"));
     }
 
     gdal_drivers::registerAll();
